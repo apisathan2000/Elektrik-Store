@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektrik Store</title>
+    <link rel="stylesheet" href="stlye.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+    <div class="header">
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"> </a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.html"> Home </a> </li>
+                    <li> <a href="products.html"> Products </a> </li>
+                    <li> <a href=""> About </a> </li>
+                    <li> <a href=""> Contact </a> </li>
+                    <li> <a href="acnt.html"> Account </a> </li>
+                </ul>
+            </nav>
+            <a href="shoppingcart.html"> <img src="images/PinClipart.com_purchase-clipart_1664900.png" width="35px" height="35px"> </a>
+            <img src="images/menu.png" class="menuicon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Your One Stop Shop <br>For Electronics</h1>
+                <p>
+                    Elektriks is an Electronic website.<br>It offers great range of products in various price ranges.
+                </p>
+                <a href="" class="btn"> Explore &#10230;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/Electronic-Download-PNG.png">
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+<!--------- Categories ----------------->
+
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/tablet.jpg" >
+                    <h4> Tablets </h4>
+                </div>
+                <div class="col-3">
+                    <img src="images/laptop.jpg" >
+                    <h4> Laptops </h4>
+                </div>
+                <div class="col-3">
+                    <img src="images/camera.jpg" >
+                    <h4> Cameras </h4>
+                </div>
+            </div>
+
+
+        </div>
+        
+    </div>
+
+<!--------- Products ----------------->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="detail_laptop.html"><img src="images/Laptops/1/front.jpeg"></a>
+                <a href="detail_laptop.html"><h4>ASUS ROG Strix G513 R9 Gaming Laptop</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p> LKR 309,800 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/Tablets/1/Tab-front.jpeg" id="SAMSUNG Galaxy Tab S7 FE Mystic Black 64GB" onclick="userclick()">
+                <h4 id="SAMSUNG Galaxy Tab S7 FE Mystic Black 64GB" onclick="userclick()">SAMSUNG Galaxy Tab S7 FE Mystic Black 64GB</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p> LKR 85,800 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/Camers/1/cam-front.jpeg" id="Canon EOS 2000D ( International Model)" onclick="userclick()">
+                <h4 id="Canon EOS 2000D ( International Model)" onclick="userclick()">Canon EOS 2000D ( International Model) </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p> LKR 146,800 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/phones/1/phone-front.jpeg" id="iPhone 13 Pro 128GB Graphite" onclick="userclick()">
+                <h4 id="iPhone 13 Pro 128GB Graphite" onclick="userclick()">iPhone 13 Pro 128GB Graphite</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>                  
+                </div>
+                <p> LKR 447,999 </p>
+            </div>
+        </div>
+
+        <!------Latest Products -->
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/Headphone/1/head-front.jpeg" id="Beats Solo Pro Wireless Noise Cancelling On-Ear Headphones with Apple H1 Headphone Chip - Black" onclick="userclick()">
+                <h4 id="Beats Solo Pro Wireless Noise Cancelling On-Ear Headphones with Apple H1 Headphone Chip - Black" onclick="userclick()">Beats Solo Pro Wireless Noise Cancelling On-Ear Headphones with Apple H1 Headphone Chip - Black</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> 
+                </div>
+                <p> LKR 29,800 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/TV/1/tv-front.jpeg" id='"SAMSUNG 65" Class 4K Crystal UHD (2160P) LED Smart TV with HDR UN65TU7000' onclick="userclick()">
+                <h4 id='"SAMSUNG 65" Class 4K Crystal UHD (2160P) LED Smart TV with HDR UN65TU7000' onclick="userclick()">SAMSUNG 65" Class 4K Crystal UHD (2160P) LED Smart TV with HDR UN65TU7000</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p> LKR 113,600 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/watche/1/watch-front.jpeg" id="Apple Watch SE GPS + Cellular, 40mm Silver Aluminum Case with Deep Navy Sport Loop" onclick="userclick()">
+                <h4 id="Apple Watch SE GPS + Cellular, 40mm Silver Aluminum Case with Deep Navy Sport Loop" onclick="userclick()">Apple Watch SE GPS + Cellular, 40mm Silver Aluminum Case with Deep Navy Sport Loop </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p> LKR 75,800 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/processor/1/cpu-front.png" id="AMD Ryzen™ 9 5900X 12-core/24-thread Desktop Processor" onclick="userclick()">
+                <h4 id="AMD Ryzen™ 9 5900X 12-core/24-thread Desktop Processor" onclick="userclick()">AMD Ryzen™ 9 5900X 12-core/24-thread Desktop Processor</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>                 
+                </div>
+                <p> LKR 117,800 </p>
+            </div>
+
+
+            <div class="col-4">
+                <img src="images/virus/1/norton-virus.jpeg" id="Norton 360 Deluxe, Antivirus Software, 5 Device, 1 Year with Auto Renewal, PC/Mac Download" onclick="userclick()">
+                <h4 id="Norton 360 Deluxe, Antivirus Software, 5 Device, 1 Year with Auto Renewal, PC/Mac Download" onclick="userclick()">Norton 360 Deluxe, Antivirus Software, 5 Device, 1 Year with Auto Renewal, PC/Mac Download</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i> 
+                </div>
+                <p> LKR 6000 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/cctv/1/cctv-front.jpeg" id="Merkury Innovations Smart Outdoor Camera, 1080p, Weather Resistant" onclick="userclick()">
+                <h4 id="Merkury Innovations Smart Outdoor Camera, 1080p, Weather Resistant" onclick="userclick()">Merkury Innovations Smart Outdoor Camera, 1080p, Weather Resistant</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p> LKR 10,000 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/Monitors/1/moni-front.jpeg" id='SAMSUNG 34" Class Flat LED Ultra WQHD Monitor (3,440 x 1,440) - 75Hz, 4ms Response, FreeSync, Display Port, HDMI (x2) - LS34J552WQNXZA' onclick="userclick()">
+                <h4 id='SAMSUNG 34" Class Flat LED Ultra WQHD Monitor (3,440 x 1,440) - 75Hz, 4ms Response, FreeSync, Display Port, HDMI (x2) - LS34J552WQNXZA' onclick="userclick()">SAMSUNG 34" Class Flat LED Ultra WQHD Monitor (3,440 x 1,440) - 75Hz, 4ms Response, FreeSync, Display Port, HDMI (x2) - LS34J552WQNXZA </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p> LKR 55,800 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/streaming/1/roku-front.png" id="Roku Express | HD Streaming Media Player with High Speed HDMI Cable and Simple Remote" onclick="userclick()">
+                <h4 id="Roku Express | HD Streaming Media Player with High Speed HDMI Cable and Simple Remote" onclick="userclick()">Roku Express | HD Streaming Media Player with High Speed HDMI Cable and Simple Remote</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>                 
+                </div>
+                <p> LKR 5,800 </p>
+            </div>
+        </div>
+    </div>
+<!-----------offer------------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/Drone/1/d-front.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Available only on Elektrik Store</p>
+                    <h1>DJI Mavic 2 Pro Drone, Grey</h1>
+                    <small>  Our dream has always been to make a drone that exists where engineering, technology, and the needs of the aerial photographer converge.</small>
+                    <a href="" class="btn"> Order Yours Today &#10230 </a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------REviews------->
+    <div class="review">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> The product and package were exactly what I wanted, an amazing machine! It took a minute to ship from coast to coast, but that's just my own impatience not the fault of the product or Beach Camera.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/users/depositphotos_7894119-stock-photo-smiling-hispanic-man-headshot.jpg">
+                    <h3> Michael Penn </h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> Great to do business with. Although DJI raised the price of their mavic 2 pro drone, these guys honoured the original price found on their site plus they gave an additional item as a perk. (32GB memory card). And they shipped item on time.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/users/male.jpg">
+                    <h3> Jason Parker </h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> Awesome drone, but the Phantom 4 has slightly better video resolution. The mavic 2 is still a great drone. The original mavic and the Phantom 4 had some minor electronic glitches and had to be returned. All DJI drones are above-average, but the DJI Phantom 4 Pro is the one I would recommend.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/users/female.jpg">
+                    <h3> Sarah Connor </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------brands---------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/Logo/Microsoft-Logo-700x394.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/Logo/Apple-Logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/Logo/Samsung-Logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/Logo/Sony-Logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/Logo/Asus-Logo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!------------bottom------------>
+    <div class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="bottom-col-1">
+                    <h3> Download Our App </h3>
+                    <p> Download Our App on iOS and Android.</p>
+                    <div class="stores">
+                       <img src="images/appstore2.png">
+                       <img src="images/play3.png">
+                    </div>
+                </div>
+                <div class="bottom-col-2">
+                    <img src="images/logo.png">
+                    <p>Our mission is to provide access to electronic goods for everyone</p>
+                </div>
+                <div class="bottom-col-3">
+                    <h3> Useful Links  </h3>
+                    <ul>
+                        <li> Blog Articles </li>
+                        <li> Return Policy </li>
+                        <li> Affiliation </li>
+                        <li> Coupons </li>
+                    </ul>
+                </div>
+                <div class="bottom-col-4">
+                    <h3> Follow Us  </h3>
+                    <ul>
+                        <li> Facebook </li>
+                        <li> Twitter </li>
+                        <li> Instagram </li>
+                        <li> Linkedin </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> Copyright 2021 - Elektrik Store</p>
+        </div>
+    </div>
+
+    <!--------js code-->
+    <script src="sweetalert2.all.min.js"></script>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px"
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+   <script>
+       function userclick(){
+           alert(event.srcElement.id);
+       }
+
+   </script>
+
+    
+    
+
+</body>
+</html>

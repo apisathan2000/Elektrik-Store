@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign-in | Register- Elektrik Store</title>
+    <link rel="stylesheet" href="stlye.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+    
+
+    <div class="container"> 
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"> </a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.html", style="color: black;"> Home </a> </li>
+                    <li> <a href="products.html" , style="color: black;"> Products </a> </li>
+                    <li> <a href="", style="color: black;"> About </a> </li>
+                    <li> <a href="", style="color: black;"> Contact </a> </li>
+                    <li> <a href="acnt.html", style="color: black;"> Account </a> </li>
+                </ul>
+            </nav>
+            <a href="shoppingcart.html"> <img src="images/PinClipart.com_purchase-clipart_1664900.png" width="35px" height="35px"> </a>
+            <img src="images/menu.png" class="menuicon" onclick="menutoggle()">
+        </div>
+    </div>
+<!----------Accountinfo------>
+    <div class="acntpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/Electronic-Download-PNG.png" width="100%">
+                </div>
+                
+                <div class="col-2"> 
+                    <div class="formcont">
+                        <div class="formbtn">
+                           <span onclick="login()"> Login </span> 
+                           <span onclick="register()"> Register </span> 
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm"> 
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                           <button type="submit" class="btn"> Login </button>
+                            <a href="" style="color: black;"> Forgot Password</a>
+                        </form>
+
+                        <form id="RegForm"> 
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="E-mail">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn"> Register </button>
+                        </form>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+        
+
+
+    
+
+
+<!------------bottom------------>
+    <div class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="bottom-col-1">
+                    <h3> Download Our App </h3>
+                    <p> Download Our App on iOS and Android.</p>
+                    <div class="stores">
+                       <img src="images/appstore2.png">
+                       <img src="images/play3.png">
+                    </div>
+                </div>
+                <div class="bottom-col-2">
+                    <img src="images/logo.png">
+                    <p>Our mission is to provide access to electronic goods for everyone</p>
+                </div>
+                <div class="bottom-col-3">
+                    <h3> Useful Links  </h3>
+                    <ul>
+                        <li> Blog Articles </li>
+                        <li> Return Policy </li>
+                        <li> Affiliation </li>
+                        <li> Coupons </li>
+                    </ul>
+                </div>
+                <div class="bottom-col-4">
+                    <h3> Follow Us  </h3>
+                    <ul>
+                        <li> Facebook </li>
+                        <li> Twitter </li>
+                        <li> Instagram </li>
+                        <li> Linkedin </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> Copyright 2021 - Elektrik Store</p>
+        </div>
+    </div>
+ 
+    <!--------js code------->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px"
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+<!------------Toggle JS---------->
+    <script>
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm")
+        var Indicator = document.getElementById("Indicator")
+
+            function register(){
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+            } 
+
+            function login(){
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+            }
+
+
+
+    </script>
+
+</body>
+</html> 
